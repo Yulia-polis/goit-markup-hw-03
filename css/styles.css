@@ -3,17 +3,58 @@ body{
     color: #434455;
     background-color: #fff;
 }
+
+
 a{
     text-decoration: none;
 }
+h1,h2,h3,h4,h5,h6{
+margin-top: 0;
+margin-bottom: 0;
+}
 ul, ol{
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 button{
     cursor: pointer;
 }
 
 /*  #region Header */
+
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 76px;
+    justify-content: space-between;
+    align-items: center;
+}
+    .nav-main{
+    display: flex;
+    gap: 40px;
+}
+.navigation-menu{
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+.navigation{
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2e2f42;
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
 .logo-studio{
     color: #2e2f42;
 }
@@ -26,19 +67,17 @@ button{
     text-transform: uppercase;
     color: #4D5AE5;
     }
-.navigation{
-        font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    }
+
 
 .navigation:hover,
 .navigation:focus{
         color: #404bbf;
     }
 
+    .adress-main{
+        display: flex;
+        gap: 40px;
+    }
     .addres-list{
         font-style: normal;
     }
@@ -60,6 +99,12 @@ button{
     /* #region Hero */
     .hero{
         background-color: #2e2f42;
+        width: 1440px;
+        height: 600px;
+        
+        padding-top: 188px;
+        
+        
     }
     .title-hero{
         font-weight: 700;
@@ -68,6 +113,12 @@ button{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    width: 496px;
+    height: 120px;
+    margin-right: auto;
+    margin-bottom: 48px;
+    margin-left: auto;
+    
     }
     .hero-btn{
         font-weight: 500;
@@ -77,6 +128,13 @@ button{
     color: #fff;
     background-color: #4d5ae5;
     font-family: inherit;
+    text-align: center;
+display: block;
+margin-right: auto;
+margin-left: auto;
+padding: 16px 32px;
+border: none;
+border-radius: 4px;
     }
     .hero-btn:hover,
     .hero-btn:focus{
@@ -86,13 +144,37 @@ button{
 
  /* #region Info  */
 
- 
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+ .info-list-main{
+    display: flex;
+    column-gap: 24px;
+    padding-top: 120px;
+    padding-left: 156px;
+    
+ }
     .info-title{
         font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 18px;
+    }
+
+    .info-li{
+        width: 264px;
     }
 
     .info-p{
@@ -104,12 +186,21 @@ button{
     
     /* #endregion */
     /* #region Team */
-
+.team-list-main{
+    display: flex;
+    column-gap: 24px;
+    margin-left: 156px;
+}
     .team-section{
         background-color: #f4f4fd;
+        width: 1440px;
+        height: 732px;
+        margin-top: 120px;
     }
     .team-list{
         background-color: #fff;
+        width: 264px;
+      
     }
     .team-title{
         font-weight: 700;
@@ -119,6 +210,16 @@ button{
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+    padding-top: 120px;
+    }
+    
+
+    .team-img{
+        margin-bottom: 32px;
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
     
     .team-name{
@@ -128,6 +229,7 @@ button{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
     }
     
     .team-post{
@@ -141,6 +243,22 @@ button{
     
     
     /* #region Port */
+    
+    
+.port-list-main{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    margin-left: 156px;
+}
+    .img-port{
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+    
     .port-title {
         font-weight: 700;
     font-size: 36px;
@@ -149,6 +267,8 @@ button{
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+    margin-top: 120px;
     }
     .port-name {
         font-weight: 500;
@@ -156,17 +276,24 @@ button{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
     }
     .port-type {
         font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
     }
     /* #endregion */
 
 .footer{
     background-color: #2e2f42;
+    width: 1440px;
+    height: 312px;
+    margin-top: 120px;
+    padding-left: 156px;
+    padding-top: 100px;
 }
 .logo-footer {
     color: #f4f4fd;
@@ -177,6 +304,9 @@ button{
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+.footer-text{
+    width: 264px;
 }
 
     
