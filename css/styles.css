@@ -170,7 +170,7 @@ ul, ol{
   }
  .info-list-main{
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
  }
     .info-title{
         font-weight: 500;
@@ -198,7 +198,7 @@ ul, ol{
 
 .team-list-main{
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
     .team-section{
         background-color: #f4f4fd;
@@ -256,7 +256,7 @@ ul, ol{
     /* #region Port */
   .portfolio{
     width: 100%;
-    padding: 120 0 120 0;
+    padding: 120px 0 120px 0;
   }  
     
 .port-list-main{
